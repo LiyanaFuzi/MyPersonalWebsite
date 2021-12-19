@@ -1,0 +1,136 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" 
+href="mypersonalwebsitestyle.css" />
+	<title>FAMILY | MY PERSONAL WEBSITE</title>
+</head>
+
+<div class="header">
+  <b><font size="40"><h1>MY PERSONAL WEBSITE</font></b>
+  <h3>"JUST BECAUSE YOU COULDN'T DO IT YESTERDAY, IT DOESN'T MEAN YOU CAN'T DO IT TODAY"</h3>
+</div>
+
+<div class="topnav">
+		<a href="index.html">HOME</a>
+		<a href="mybiodata.html" target="_blank">BIODATA</a>
+		<a href="myfamily.html">FAMILY</a>
+		<a href="myeducation.html" target="_blank">EDUCATION</a>
+		<a href="myexperience.html" target="_blank">EXPERIENCE</a>
+		<a href="mygallery.html" target="_blank">GALLERY</a>
+  <a href="#" style="float:right"><a href="#" style="float:right"><button type="button" onclick="alert('Hello! Welcome to My Personal Website 😉')">Click Me!</button></a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <font face="lucida handwriting"><center><h2>MY FAMILY</h2></center></font>
+		<p align="center"><img src="my siblings (2).jpg" border="10">
+			<b><sub><center><i>My family has 9 people included our little Hana</i></center></sub></b>
+
+<p align="justify"> As mention, I have 3 siblings which is my 2 brothers and their lovely wife and my sister. My mother and father are both from Kedah. So, we also was born in Kedah but in different hospital.My family are very supportive and supporting to each other and they always give me a courage to do something to make me success in my life. Growing up in a caring and supportive and loving family will improve our social avtivities and health.</p>
+<p align="justify"> My father is a government retiree who has served for 30 years at Universiti Utara Malaysia (UUM) as a librarian. As well as my mother also currently working at UUM as a clerk in Jabatan Pendaftar. My all siblings are working in the field they are interested in. They give me an encouragement to achieve what I want to be after I finished my studies. My older brother is working as a Software Engineer and my sister are as a Marketing Executive. Both of them are working in Kuala Lumpur and my other one brother are working as a Product Quality Engineer in Pulau Pinang.</p>
+<p align="justify"> My parents are excellent role models for their children. This is due to the fact that they will not allow me to do anything that will harm me. For instance, they would,  be with me and accompany me when I got to play or went for a walk when I was pretty young. They taught me to be a person with a full manner, so that people will respect me when I show a manner toward them such as shake hands when I meet people who are older than me.</p> 
+<p align="justify"> Family is very important to us and yes, family taught me many things about the meaning of life. Without them, we would not be able enough to respond to the challenges going on around us and they were the ones who gave me the courage and strength to fight my fears. In a nutshell, family is significant in our lives because it can provide moral support and teach us how to function in society. It gives love and support, as well as establishing principles and values.</p>
+			</article>
+		</section>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <font face="lucida console"><center><h2>DATE & TIME</h2></center></font>
+   <meta charset="utf-8">
+    <center><title>Digital Clock With Date</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="initClock()">
+
+    <!--digital clock start-->
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <!--digital clock end-->
+
+    <script type="text/javascript">
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds(),
+          pe = "AM";
+
+          if(hou >= 12){
+            pe = "PM";
+          }
+          if(hou == 0){
+            hou = 12;
+          }
+          if(hou > 12){
+            hou = hou - 12;
+          }
+
+          Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+          }
+
+          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+    </script>
+<br>
+<audio controls autoplay>
+  <source src="Relaxing.mp3" hidden="true" type="audio/ogg">
+  <source src="Relaxing.mp3" hidden="true" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      <div class="card"><a href="mybiodata.html"></a></div>
+    </div>
+ 
+    <div class="card">
+
+	<h3><a href="myplaylist.html"  style="text-decoration:none" target=_"blank"><font color="0000FF"><h3>My Favourite Playlist</a></h3>
+	<a href="myvideo.html" style="text-decoration:none" target=_"blank"><h3>My Video Collections</a>
+ 
+
+    </div>
+    <div class="card">
+      <i><h3>Follow Me</h3></i>
+<a href="https://www.facebook.com/norliyana.mohamadfuzi/" target_blank"><img src="fb.png"></a> @Norliyana Mohamad Fuzi
+<br>
+<br>
+<a href="https://www.instagram.com/yana.fuzi/" target="_blank"><img src="ig.png"></a> @yana.fuzi
+  
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
+

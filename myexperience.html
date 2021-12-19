@@ -1,0 +1,145 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" 
+href="mypersonalwebsitestyle.css" />
+	<title>EXPERIENCE | MY PERSONAL WEBSITE</title>
+</head>
+
+<div class="header">
+  <b><font size="40"><h1>MY PERSONAL WEBSITE</font></b>
+  <h3>"JUST BECAUSE YOU COULDN'T DO IT YESTERDAY, IT DOESN'T MEAN YOU CAN'T DO IT TODAY"</h3>
+</div>
+
+<div class="topnav">
+		<a href="index.html">HOME</a>
+		<a href="mybiodata.html" target="_blank">BIODATA</a>
+		<a href="myfamily.html" target="_blank">FAMILY</a>
+		<a href="myeducation.html" target="_blank">EDUCATION</a>
+		<a href="myexperience.html">EXPERIENCE</a>
+		<a href="mygallery.html" target="_blank">GALLERY</a>
+  <a href="#" style="float:right"><a href="#" style="float:right"><button type="button" onclick="alert('Hello! Welcome to My Personal Website 😉')">Click Me!</button></a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+	<font face="lucida handwriting"><h2>MY EXPERIENCE ON REGISTER IN UiTM KEDAH</h2></font>
+
+<center><img src="class.jpg" border="10"></center>
+<br>
+<center><i>The view behind my college</i></center>
+<p align="justify">This is my first time ever to stay far from my family and it feel sad to leave my beloved family to further my study at UiTM. My feelings were mixed while on the way to the UiTM campus on the day of registration. I am taking Diploma in Information Management (IM110) in UiTM Kedah. First of all I did not know what this course is about, but, after doing some research, I understand that this course are about management in Information Agency. They also include some subject that mandatory to take for 3 semester which is Integrated Language Skills (ELC) and Fundamentals of Islam (CTU).</p>
+<p align="justify">As soon as we arrive at the college to register my room and give the documents that already provided that need to be brought along. While I was queuing, I saw my schoolmates that also apply to UiTM Kedah. After a long waited, I arrive at the registration table to give the documents needed and get my room key. Not long after that, I was searching my roommate that should be together with me, but unfortunately I don’t found her.</p>
+<br>
+<center><img src="Kunci bilik.jpg" border="10"></center>
+<br>
+<center><i>Room Key (looks like a hotel room key)</i></center>
+<p align="justify">Because of my roommate are missing and was not found, I go to my room together with my family and do what I should do which is clean the room and unpacking my things to my place. Ouh! Before I forgot, I got a room with 2 person, such a lucky. In the evening, we have to do an orientation which to get to know each other. So, we gather at the parking lot in front of Masria college and head to Dewan Perdana by walking in a group that assist by our senior. For students who are not feeling well that time, they will ride a senior car.</p>
+<center><img src="Masria.jpg" border="10"></center>
+<br>
+<center><i>Me with my brother and sister in law</i></center>
+<br>
+<p align="justify">That's a little experience of me when I registering for college. I'll called its a sweet memory for me as this is the first time I am going to live alone and survive without my family. I gainned a lots of friends during my time living in college and I learn on how to doing all things without my parent helps which was a bit harder than usual.</p>
+<br>
+<center><i><b>~THE END~</b></i></center>
+		</article>
+		</section>
+	</div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <font face="lucida console"><center><h2>DATE & TIME</h2></center></font>
+   <meta charset="utf-8">
+    <center><title>Digital Clock With Date</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="initClock()">
+
+    <!--digital clock start-->
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <!--digital clock end-->
+
+    <script type="text/javascript">
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds(),
+          pe = "AM";
+
+          if(hou >= 12){
+            pe = "PM";
+          }
+          if(hou == 0){
+            hou = 12;
+          }
+          if(hou > 12){
+            hou = hou - 12;
+          }
+
+          Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+          }
+
+          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+    </script>
+<br>
+<audio controls autoplay>
+  <source src="Relaxing.mp3" hidden="true" type="audio/ogg">
+  <source src="Relaxing.mp3" hidden="true" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      <div class="card"><a href="mybiodata.html"></a></div>
+    </div>
+ 
+    <div class="card">
+
+	<h3><a href="myplaylist.html"  style="text-decoration:none" target=_"blank"><font color="0000FF"><h3>My Favourite Playlist</a></h3>
+	<a href="myvideo.html" style="text-decoration:none" target=_"blank"><h3>My Video Collections</a>
+ 
+
+    </div>
+    <div class="card">
+      <i><h3>Follow Me</h3></i>
+<a href="https://www.facebook.com/norliyana.mohamadfuzi/" target_blank"><img src="fb.png"></a> @Norliyana Mohamad Fuzi
+<br>
+<br>
+<a href="https://www.instagram.com/yana.fuzi/" target="_blank"><img src="ig.png"></a> @yana.fuzi
+ 
+    </div>
+  </div>
+
+
+
+</body>
+</html>
